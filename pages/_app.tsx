@@ -17,12 +17,12 @@ import { publicProvider } from 'wagmi/providers/public';
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     mainnet,
+    goerli,
     polygon,
     optimism,
     arbitrum,
     base,
     zora,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [goerli] : []),
   ],
   [publicProvider()]
 );

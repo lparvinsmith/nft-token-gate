@@ -4,9 +4,9 @@ This workshop was created for the Coinbase Engineering Conference in September 2
 
 ## Goals
 
-1. Create and deploy an NFT Smart Contract on EVM blockchains ([docs](1-creatingAnNftCollection.md))
-2. Use Etherscan to read and write blockchain state with your smart contract's methods ([docs](2-usingEtherscan.md))
-3. Build a tokengated dapp with Next.js ([docs](3-tokengatingDapp.md))
+1. Create and deploy an NFT Smart Contract on EVM blockchains ([docs](docs/1-creatingAnNftCollection.md))
+2. Use Etherscan to read and write blockchain state with your smart contract's methods ([docs](docs/2-usingEtherscan.md))
+3. Build a tokengated dapp with Next.js ([docs](docs/3-tokengatingDapp.md))
 
 ## Setup
 
@@ -27,6 +27,7 @@ This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Ne
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 ```
 
