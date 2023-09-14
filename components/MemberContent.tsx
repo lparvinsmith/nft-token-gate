@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css';
 
 export function MemberContent(){
     const { address } = useAccount();
-    const {data: ensName} = useEnsName({address});
+    const {data: ensName} = useEnsName({address, chainId: 1});
     const [isClient, setIsClient] = useState(false)
  
     useEffect(() => {
