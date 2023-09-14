@@ -19,9 +19,10 @@ import { useAccount, useContractRead } from 'wagmi'
 import ABI from '../contracts/ABI.json'
  
 const { address } = useAccount()
-const { data, isError, isLoading } = useContractRead({
-    address,
-    abi: ABI,
-    functionName: 'balanceOf',
-  })
+const { data } = useContractRead({
+  address: CONTRACT_ADDRESS,
+  abi: ABI,
+  functionName: 'balanceOf',
+  args: [address],
+})
 ```

@@ -1,9 +1,11 @@
-import { useAccount, useContractRead } from 'wagmi'
+import { useAccount, useContractRead } from 'wagmi';
 import { MemberContent } from './MemberContent';
 import { NonMemberContent } from './NonMemberContent';
 
+const CONTRACT_ADDRESS = '';
+
 export function TokenGatedContent(){
-    const { address } = useAccount()
+    const { address } = useAccount();
 
     // useContractRead to read user's NFT balance
     // https://wagmi.sh/react/hooks/useContractRead
